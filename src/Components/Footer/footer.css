@@ -1,0 +1,138 @@
+.footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 60px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    width: calc(25% - 30px);
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .social-links a {
+    color: #ccc;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #fff;
+  }
+  
+  .subscribe-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .subscribe-form input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+  }
+  
+  .subscribe-form button {
+    width: 30%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+    padding: 10px;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #0e78ea;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0;
+  }
+  
+  .footer-terms {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-terms li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-terms a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-terms a:hover {
+    color: #fff;
+  }
+  

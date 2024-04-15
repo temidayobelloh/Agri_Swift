@@ -1,0 +1,17 @@
+.about-container{
+        background-color: rgb(233, 255, 233);
+        color: black;
+        text-align: center;
+        padding: auto auto;
+        height: 80vh;
+}
+p{
+        padding-left: 50px;
+        padding-right:50px;
+        height: 20px;
+        padding-bottom: 0px;
+}
+h2{
+        padding-top: 60px;
+        padding-bottom: 0px;
+}
