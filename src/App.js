@@ -1,11 +1,11 @@
 
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Dashboard from './Components/Dashboard/dashboard';
-import ProductListing from './Components/Product_Listing/product-listing';
-import CropManagement from './Components/CropManagement/crop-management';
-import Messages from './Components/Messages/messages';
-import Settings from './Components/Settings/settings';
-import Notifications from './Components/Notification/notification';
+import Dashboard from './Components/Pages/Dashboard/dashboard';
+import ProductListing from './Components/Pages/Product_Listing/product-listing';
+import CropManagement from './Components/Pages/CropManagement/crop-management';
+import Messages from './Components/Pages/Messages/messages';
+import Settings from './Components/Pages/Settings/settings';
+import Notifications from './Components/Pages/Notification/notification';
 import DashboardFooter from './Components/Dashboard-Footer/dashboard-footer';
 import './App.css';
 
@@ -45,10 +45,11 @@ const App = () => {
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>
-        </div>
+          
+        </div>        
       </div>
-      <div>
-      <DashboardFooter/>
+      <DashboardFooter/>      
+      <div>        
       </div>
     </Router>
   );

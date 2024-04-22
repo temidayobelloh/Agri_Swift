@@ -2,6 +2,7 @@ import {useState} from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import './sign-up.css';
+import { BackgroundComponent } from '../../Background/background-component';
 
 const SignUp = () => {
 
@@ -33,46 +34,13 @@ const SignUp = () => {
     });
   };
   
-  const [selectedOption, setSelectedOption] = useState('');
-
-  const handleOptionChange = (option) => {
-    setSelectedOption(option);
-  };
-
   return (
-    <div className="sign-up-wrapper">
-    <div className='sign-up-container'>
-    <label>
-            <input
-              type="radio"
-              value="Your Details"
-              checked={selectedOption === 'Your Details'}
-              onChange={() => handleOptionChange('Your Details')}
-            />
-            Your Details
-          </label>
-          <br />
-          <label>
-            <input
-              type="radio"
-              value="Email Verification"
-              checked={selectedOption === 'Email Verification'}
-              onChange={() => handleOptionChange('Email Verification')}
-            />
-            Email Verification
-          </label>
-          <br />
-          <label>
-            <input
-              type="radio"
-              value="Add your Work Details"
-              checked={selectedOption === 'Add your Work Details'}
-              onChange={() => handleOptionChange('Add your Work Details')}
-            />
-            Add your Work Details
-          </label>
-        <button className="sign-up-button">Already have an account?</button>
-        </div>
+    <>
+    <div>
+    <div>
+    <BackgroundComponent/>
+    </div>
+    </div>
     <div className='second-sign-up-container'>
     <Formik initialValues={formData} validationSchema={validationSchema} onSubmit={handleSubmit}>
       <Form className="sign-up">
@@ -105,7 +73,7 @@ const SignUp = () => {
       </Form>
     </Formik>
     </div>
-    </div>
+    </>
   )
 }
 

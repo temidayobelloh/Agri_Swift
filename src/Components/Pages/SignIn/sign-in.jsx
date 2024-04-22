@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './sign-in.css';
+import { BackgroundComponent } from '../../Background/background-component';
 
 const SignInPage = () => {
   const [email, setEmail] = useState('');
@@ -22,9 +23,8 @@ const SignInPage = () => {
 
   return (
     <div className="sign-in-page">
-      <div className="left-section">
-        <h2>Logo</h2>
-        <h3>Call to action</h3>
+      <div>
+        <BackgroundComponent/>
       </div>
       <div className="right-section">
         <div className="sign-in-form">

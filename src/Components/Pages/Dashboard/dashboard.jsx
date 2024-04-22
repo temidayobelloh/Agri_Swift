@@ -1,5 +1,5 @@
-import DashboardFigure from '../Dashboard-Figure/dashboard-figure';
-import DashboardOverview from '../DashboardOverview/dashboard-overview';
+import DashboardFigure from '../../Dashboard-Figure/dashboard-figure';
+import DashboardOverview from '../../DashboardOverview/dashboard-overview';
 import './dashboard.css';
 
 const Dashboard = () => {
