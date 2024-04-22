@@ -1,0 +1,11 @@
+.dashboard-overview-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Each column spans 1 fraction of the available space */
+    gap: 24px;
+  }
+  
+  .dashboard-overview-component {
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 8px;
+  }

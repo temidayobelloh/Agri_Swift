@@ -1,0 +1,17 @@
+.log-out-button{
+    width:274px;
+    height:48px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 12px, 16px, 12px, 16px;
+    border-radius: 16px;
+    margin-top: 32px;
+}
+.dashboard-footer-container{
+    margin-top: 289px;
+    margin-left: 48px;
+}
+.dashboard-footer-container ul {
+    list-style: none;
+}

@@ -1,34 +1,56 @@
-import './App.css';
-import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
-import Home from './Components/Pages/Home/home';
-import About from './Components/Pages/About/about_us';
-import Products from './Components/Pages/Farmers/products';
-import Questions from './Components/Pages/Buyers/questions';
-import SignUp from './Components/Pages/SignUp/sign-up';
 
-const App=()=> {
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import Dashboard from './Components/Dashboard/dashboard';
+import ProductListing from './Components/Product_Listing/product-listing';
+import CropManagement from './Components/CropManagement/crop-management';
+import Messages from './Components/Messages/messages';
+import Settings from './Components/Settings/settings';
+import Notifications from './Components/Notification/notification';
+import DashboardFooter from './Components/Dashboard-Footer/dashboard-footer';
+import './App.css';
+
+const App = () => {
   return (
-    <BrowserRouter>
-    <header>
-    <nav>
-    <h1>AgriSwift</h1>
-    <NavLink to="/">Home</NavLink>
-    <NavLink to="/about"> About Us</NavLink>
-    <NavLink to="/farmers"> Farmers </NavLink>
-    <NavLink to="/buyers"> Buyers</NavLink>
-    <NavLink to="/sign_up">Sign Up</NavLink>
-    </nav>
-    </header>
-    <main>
-    <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/about" element={<About/>}/>
-    <Route path="/farmers" element={<Products/>}/>
-    <Route path="/buyers" element={<Questions/>}/>
-    <Route path="/sign_up" element={<SignUp/>}/>
-    </Routes>
-    </main>
-    </BrowserRouter>
+    <Router>
+      <div style={{ display: 'flex' }}>
+        <div className="sidebar">
+          <h2 className='logo'>Logo</h2>
+          <ul>
+            <li>
+              <Link to="/">Dashboard</Link>
+            </li>
+            <li>
+              <Link to="/product-listings">Product Listings</Link>
+            </li>
+            <li>
+              <Link to="/crop-management">Crop Management</Link>
+            </li>
+            <li>
+              <Link to="/messages">Messages</Link>
+            </li>
+            <li>
+              <Link to="/notifications">Notifications</Link>
+            </li>
+            <li>
+              <Link to="/settings">Settings</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/product-listings" element={<ProductListing />} />
+            <Route path="/crop-management" element={<CropManagement />} />
+            <Route path="/messages" element={<Messages />} />
+            <Route path="/notifications" element={<Notifications />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </div>
+      </div>
+      <div>
+      <DashboardFooter/>
+      </div>
+    </Router>
   );
 };
 

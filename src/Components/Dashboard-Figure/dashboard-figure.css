@@ -1,0 +1,31 @@
+.dashboard-figure-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Added width to ensure proper spacing */
+}
+
+.dashboard-figure-title {
+    width: 160px;
+    height: 46px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.dashboard-figure-two {
+    display: flex;
+    width: 436px;
+    height: 152px;
+    background-color: #D7D7D7;
+    border-radius: 16px;
+    padding: 16px 18px; /* Adjusted padding */
+    text-align: center;
+}
+
+.dashboard-figure-three {
+    background-color: #D7D7D7;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 24px; /* Added margin-left for spacing */
+}

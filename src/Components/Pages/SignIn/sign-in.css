@@ -1,0 +1,74 @@
+.sign-in-page {
+    width: 1440px;
+    height: 1024px;
+    background-color: white;
+    display: flex;
+  }
+  
+  .left-section {
+    width: 559px;
+    background-color: #D9D9D9;
+  }
+  
+  .right-section {
+    width: 400px;
+    height: 468px;
+    margin-left: 241px;
+    margin-top: 278px;
+    margin-bottom: 278px;
+    margin-right: 240px;
+  }
+  
+  .sign-in-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label-email,
+  .label-password {
+    font-size: 20px;
+  }
+  
+  .sign-in-text {
+    width: 400px;
+    height: 48px;
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  input {
+    width: 100%; /* Make inputs responsive */
+    height: 48px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    background-color: #F4F4F4;
+    padding: 0 16px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  button {
+    width: 100%; /* Make buttons responsive */
+    height: 48px;
+    border-radius: 16px;
+  }
+  
+  .sign-in-button {
+    background-color: black;
+    color: white;
+  }
+  
+  .alternative-sign-in {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .sign-in-with-google-button {
+    background-color: #4285f4;
+    color: white;
+  }
+.sign-up-prompt{
+    width: 169px;
+    height: 16px;
+} 
