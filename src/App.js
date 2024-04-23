@@ -22,7 +22,7 @@ const App = () => {
               <NavLink to="/product-listings" activeClassName="active">Product Listings</NavLink>
             </li>
             <li>
-              <NavLink to="/crop-management" activeClassName="active">Crop Management</NavLink>
+              <NavLink to="/crop-management" activeClassName="active"> Order Mgmt</NavLink>
             </li>
             <li>
               <NavLink to="/messages" activeClassName="active">Messages</NavLink>

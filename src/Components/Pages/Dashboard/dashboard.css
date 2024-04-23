@@ -1,16 +1,18 @@
-.dashboard-title{
+.dashboard-title {
   width: 174px;
   font-size: 24px;
   font-weight: bold;
   line-height: 32px;
   margin-bottom: 8px;
 }
-.dashboard-date{
-  width:174px;
-  margin:0;
+
+.dashboard-date {
+  width: 174px;
+  margin: 0;
   font-size: 16px;
   margin-bottom: 40px;
 }
+
 .dashboard-container {
   width: 900px; /* Set a fixed width */
 }
@@ -19,13 +21,25 @@
   margin: 0;
   padding: 0;
 }
-
+.dashboard-user-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  cursor: pointer;
+}
 .dashboard-user-container {
-  max-width: 800px; /* Set a max-width to contain the content */
+  max-width: 1080px;
   height: 240px;
   background-color: #D9D9D9;
   border-radius: 16px;
   margin-left: 0px;
+  position: relative;
+  overflow: visible; 
+}
+.dashboard-user-image {
+  width: 370px; 
+  height: 326px; /* Set the height of the image */
+  position: absolute; /* Position the image absolutely */
+  top: -64px; 
+  left: 530px; /* Move the image 644px to the left */
 }
 
 .dashboard-user-wrapper {
@@ -37,13 +51,17 @@
   font-size: 36px;
   font-weight: bold;
   line-height: 48px;
-  margin:0px;
+  margin: 0px;
 }
 
 .dashboard-user-title {
   font-size: 18px;
+  width: 580px;
+  height: 48px;
+  margin-top: 16px;
 }
-.overview-text{
+
+.overview-text {
   font-size: 24px;
   font-weight: bold;
   width: 120px;

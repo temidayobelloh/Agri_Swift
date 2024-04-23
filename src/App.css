@@ -79,11 +79,10 @@ body {
 
 .dashboard-footer-container ul {
   list-style: none;
-  margin-left: 18px;
 }
 
 .log-out-button {
-  width: 243px;
+  width: 274px; /* Adjusted width */
   height: 48px;
   text-align: center;
   color: white;
@@ -117,6 +116,6 @@ body {
   }
 
   .content {
-    flex: 1; /* Let the content occupy remaining space */
+    flex: 1; 
   }
 }
