@@ -1,5 +1,4 @@
-
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink, Routes } from 'react-router-dom';
 import Dashboard from './Components/Pages/Dashboard/dashboard';
 import ProductListing from './Components/Pages/Product_Listing/product-listing';
 import CropManagement from './Components/Pages/CropManagement/crop-management';
@@ -12,27 +11,27 @@ import './App.css';
 const App = () => {
   return (
     <Router>
-      <div style={{ display: 'flex' }}>
+      <div className="container">
         <div className="sidebar">
           <h2 className='logo'>Logo</h2>
           <ul>
             <li>
-              <Link to="/">Dashboard</Link>
+              <NavLink to="/" activeClassName="active">Dashboard</NavLink>
             </li>
             <li>
-              <Link to="/product-listings">Product Listings</Link>
+              <NavLink to="/product-listings" activeClassName="active">Product Listings</NavLink>
             </li>
             <li>
-              <Link to="/crop-management">Crop Management</Link>
+              <NavLink to="/crop-management" activeClassName="active">Crop Management</NavLink>
             </li>
             <li>
-              <Link to="/messages">Messages</Link>
+              <NavLink to="/messages" activeClassName="active">Messages</NavLink>
             </li>
             <li>
-              <Link to="/notifications">Notifications</Link>
+              <NavLink to="/notifications" activeClassName="active">Notifications</NavLink>
             </li>
             <li>
-              <Link to="/settings">Settings</Link>
+              <NavLink to="/settings" activeClassName="active">Settings</NavLink>
             </li>
           </ul>
         </div>
@@ -45,12 +44,9 @@ const App = () => {
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>
-          
-        </div>        
+        </div>
       </div>
-      <DashboardFooter/>      
-      <div>        
-      </div>
+      <DashboardFooter />
     </Router>
   );
 };

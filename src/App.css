@@ -17,23 +17,23 @@ body {
   font-size: 40px;
 }
 
+.container {
+  display: flex;
+}
+
 .sidebar {
+  flex: 0 0 245px; /* Fixed width for the sidebar */
   border: 1px solid black;
-  width: 268px;
-  height: 372px;
-  background-color: black;
+  background-color: #34495e; /* Professional background color */
   color: white;
   padding: 16px 0px 0px 0px;
-  transition: opacity 0.3s ease;
-  margin-left: 48px;
-  float: left; /* Added float to align sidebar and content side by side */
 }
 
-.sidebar.show {
-  opacity: 1;
+.sidebar:hover {
+  background-color: #2c3e50; /* Change background color on hover */
 }
 
-.sidebar h1 {
+.sidebar h2 {
   font-size: 24px;
   margin-bottom: 20px;
   color: #ffffff;
@@ -59,33 +59,64 @@ body {
 }
 
 .sidebar a:hover {
-  background-color: #34495e;
+  background-color: #2c3e50;
+  border-left: 4px solid #ffffff; /* Add border on hover */
 }
 
-/* Content Styles */
+.sidebar a.active {
+  background-color: #2c3e50;
+  border-left: 4px solid #ffffff; /* Active link styling */
+}
+
 .content {
-  padding: 20px; /* Removed margin-left to prevent extra space */
+  flex: 1; /* Let the content occupy remaining space */
+  padding: 20px;
+}
+
+.dashboard-footer-container {
+  margin-top: 100px; /* Fixed margin top */
+}
+
+.dashboard-footer-container ul {
+  list-style: none;
+  margin-left: 18px;
+}
+
+.log-out-button {
+  width: 243px;
+  height: 48px;
+  text-align: center;
+  color: white;
+  background-color: black; /* Professional background color */
+  padding: 12px 16px; /* Changed from comma separated to space separated */
+  border-radius: 16px;
+  margin-top: 32px;
+  margin-bottom: 43px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.log-out-button:hover {
+  background-color: #2c3e50; /* Change background color on hover */
+  transform: translateY(-5px); /* Move button up on hover */
 }
 
 /* Responsive Layout */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Change to column layout on small screens */
+  }
+
   .sidebar {
-    width: 200px;
+    flex: 0 0 auto; /* Allow sidebar to shrink */
+    width: 100%; /* Sidebar takes full width */
+    margin-bottom: 20px; /* Add space between sidebar and content */
+  }
+
+  .sidebar.show {
+    opacity: 1;
   }
 
   .content {
-    margin-left: 200px; /* Adjusted margin-left to maintain alignment */
-  }
-}
-
-@media (max-width: 576px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: static;
-  }
-
-  .content {
-    margin-left: 0;
+    flex: 1; /* Let the content occupy remaining space */
   }
 }
