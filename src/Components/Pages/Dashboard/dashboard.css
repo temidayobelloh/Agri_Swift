@@ -1,3 +1,16 @@
+.dashboard-title{
+  width: 174px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+.dashboard-date{
+  width:174px;
+  margin:0;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
 .dashboard-container {
   width: 900px; /* Set a fixed width */
 }
@@ -5,7 +18,6 @@
 .dashboard-wrapper {
   margin: 0;
   padding: 0;
-  border: 1px solid black;
 }
 
 .dashboard-user-container {
@@ -13,7 +25,7 @@
   height: 240px;
   background-color: #D9D9D9;
   border-radius: 16px;
-  margin: 0 auto;
+  margin-left: 0px;
 }
 
 .dashboard-user-wrapper {
@@ -25,9 +37,17 @@
   font-size: 36px;
   font-weight: bold;
   line-height: 48px;
-  margin: 0;
+  margin:0px;
 }
 
 .dashboard-user-title {
   font-size: 18px;
+}
+.overview-text{
+  font-size: 24px;
+  font-weight: bold;
+  width: 120px;
+  margin-bottom: 24px;
+  margin: 26px;
+  margin-left: 0;
 }

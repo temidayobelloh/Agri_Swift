@@ -7,7 +7,7 @@ const Dashboard = () => {
     <div className='dashboard-container'>
       <div className='dashboard-wrapper'>
         <p className='dashboard-title'>Dashboard</p>
-        <p className='dashboard-date'>Sunday, 24th April, 2034</p>
+        <p className='dashboard-date'>Sunday, 24th April, 2024</p>
 
         <div className='dashboard-user-container'>
           <div className='dashboard-user-wrapper'>
@@ -15,7 +15,7 @@ const Dashboard = () => {
             <p className='dashboard-user-title'>Explore market insights, manage your listings, and stay connected with Agriswift.</p>
           </div>
         </div>
-        <p>Overview</p>
+        <p className='overview-text'>Overview</p>
         <DashboardOverview/>
         <DashboardFigure/>
       </div>

@@ -9,9 +9,16 @@ const DashboardFigure = () => {
           <img alt="statistics" />
         </div>
       </div>
-      <div className='dashboard-figure-three'><p>Scheduled Deliveries</p>
-      <img alt='scheduled-delivery-icon'/>
+      <div>
+      <p className='fig-three-title'>Scheduled Deliveries</p>
+      <div className='dashboard-figure-three'>
+      </div></div>
+      <div className='fig-four-and-five-wrapper'>
+      <div className='dashboard-figure-four'><p>Weekly weather</p>
       </div>
+      <div className='dashboard-figure-five'>Weekly orders statistics here</div>
+      </div>
+      
     </div>
   )
 }
