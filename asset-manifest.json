@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Agri_Swift/static/css/main.f2b2ea33.css",
+    "main.css": "/Agri_Swift/static/css/main.9009aae8.css",
     "main.js": "/Agri_Swift/static/js/main.00b16ab8.js",
     "static/media/order-listings.svg": "/Agri_Swift/static/media/order-listings.7cc47d0d90c6657184b1a67d9b5323c6.svg",
     "static/media/account settings one.svg": "/Agri_Swift/static/media/account settings one.a32ddaf7b74c254a1e0a45c38f409678.svg",
@@ -16,11 +16,11 @@
     "static/media/frame1.svg": "/Agri_Swift/static/media/frame1.768cc16282b3906f2316d7ab9e42d464.svg",
     "index.html": "/Agri_Swift/index.html",
     "static/media/arrow-right.svg": "/Agri_Swift/static/media/arrow-right.88384672317c2e3f8f6c925e916df6c4.svg",
-    "main.f2b2ea33.css.map": "/Agri_Swift/static/css/main.f2b2ea33.css.map",
+    "main.9009aae8.css.map": "/Agri_Swift/static/css/main.9009aae8.css.map",
     "main.00b16ab8.js.map": "/Agri_Swift/static/js/main.00b16ab8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2b2ea33.css",
+    "static/css/main.9009aae8.css",
     "static/js/main.00b16ab8.js"
   ]
 }
