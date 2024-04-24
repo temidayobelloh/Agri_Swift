@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, NavLink, Routes } from 'react-router-dom';
+import SignInPage from './Components/Pages/SignIn/sign-in';
 import Dashboard from './Components/Pages/Dashboard/dashboard';
 import ProductListing from './Components/Pages/Product_Listing/product-listing';
 import CropManagement from './Components/Pages/CropManagement/crop-management';
@@ -7,6 +8,8 @@ import Settings from './Components/Pages/Settings/settings';
 import Notifications from './Components/Pages/Notification/notification';
 import DashboardFooter from './Components/Dashboard-Footer/dashboard-footer';
 import './App.css';
+import SignUp from './Components/Pages/SignUp/sign-up';
+import WorkDetails from './Components/Pages/WorkDetails/work-details';
 
 const App = () => {
   return (
@@ -43,6 +46,9 @@ const App = () => {
             <Route path="/messages" element={<Messages />} />
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/signin" element={<SignInPage />} /> 
+            <Route path="/signup" element={<SignUp/>}/>
+            <Route path="/work-details" element={<WorkDetails/>}/>
           </Routes>
         </div>
       </div>

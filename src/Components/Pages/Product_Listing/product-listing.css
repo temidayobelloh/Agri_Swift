@@ -1,6 +1,6 @@
 .product-listing-container {
   max-width: 1080px; /* Set max-width */
-  margin: 0 auto; /* Center the container */
+  margin: 0; /* Center the container */
 }
 
 .product-nav-wrapper {
@@ -25,6 +25,7 @@
   line-height: 24px;
   font-family: Lato; /* Changed font family */
   color: #555; /* Adjusted color */
+  margin: 0;
 }
 
 .search-input-wrapper {
@@ -35,6 +36,7 @@
   border: 1px solid #ccc; /* Added border for better visibility */
   font-size: 16px;
   color: #333;
+  margin: 0;
 }
 
 .user-title-wrapper {
@@ -45,11 +47,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .user-title-name {
   font-size: 18px; /* Reduced font size for better alignment */
   color: #333; /* Adjusted color */
+  margin: 0;
 }
 
 .user-title-init {
