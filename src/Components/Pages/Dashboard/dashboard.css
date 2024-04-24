@@ -6,6 +6,7 @@
   line-height: 1.2; /* Adjusted line height for better readability */
   margin-bottom: 20px; /* Increased margin for separation */
   text-align: center; /* Center align text */
+  white-space: nowrap;
 }
 
 /* Styles for Dashboard Date */
