@@ -1,20 +1,27 @@
 {
   "files": {
-    "main.css": "/Agri_Swift/static/css/main.1449c8c3.css",
-    "main.js": "/Agri_Swift/static/js/main.94dc4d4e.js",
+    "main.css": "/Agri_Swift/static/css/main.42014168.css",
+    "main.js": "/Agri_Swift/static/js/main.46b8bf39.js",
+    "static/media/order-listings.svg": "/Agri_Swift/static/media/order-listings.5c7ba955ecf7564d065b99310df07853.svg",
+    "static/media/account settings one.svg": "/Agri_Swift/static/media/account settings one.50e9f2e92fde28caba90f49749611a8b.svg",
+    "static/media/Account settings.svg": "/Agri_Swift/static/media/Account settings.bd237fef2427d49d2d04f5c97e6c3bbd.svg",
+    "static/media/Opened chat.svg": "/Agri_Swift/static/media/Opened chat.f144d95a12bc775d1ff6bc9449b13063.svg",
     "static/media/Young woman harvesting.svg": "/Agri_Swift/static/media/Young woman harvesting.2d199640ea5f7f73e5909270eaf81016.svg",
+    "static/media/Grid.svg": "/Agri_Swift/static/media/Grid.88e8f718e65f7d5055cf34e4850f69b3.svg",
+    "static/media/Chart.svg": "/Agri_Swift/static/media/Chart.5963e8d076971c8145e0ba1663db79e6.svg",
+    "static/media/statistics.svg": "/Agri_Swift/static/media/statistics.7de2a35f828bb3e2515e4a9111d07974.svg",
     "static/media/frame2.svg": "/Agri_Swift/static/media/frame2.dd32f62bfe927faf4b20191fba1516c0.svg",
-    "static/media/bag-happy.svg": "/Agri_Swift/static/media/bag-happy.4be8f00b64915f4d052611338e4f939a.svg",
+    "static/media/first frame.svg": "/Agri_Swift/static/media/first frame.8ed140f32e02d83245bfac029d362d38.svg",
     "static/media/frame 3.svg": "/Agri_Swift/static/media/frame 3.6ce80066da24de6be6e60d65cf91adcc.svg",
     "static/media/Background image.svg": "/Agri_Swift/static/media/Background image.66e8f93c8c96af4f27a7884343cd77f6.svg",
     "static/media/frame1.svg": "/Agri_Swift/static/media/frame1.f26c7008fa2d7f50c9966331766e8bf8.svg",
     "index.html": "/Agri_Swift/index.html",
     "static/media/arrow-right.svg": "/Agri_Swift/static/media/arrow-right.bd16366a5002ed1476070c1d60c53ab9.svg",
-    "main.1449c8c3.css.map": "/Agri_Swift/static/css/main.1449c8c3.css.map",
-    "main.94dc4d4e.js.map": "/Agri_Swift/static/js/main.94dc4d4e.js.map"
+    "main.42014168.css.map": "/Agri_Swift/static/css/main.42014168.css.map",
+    "main.46b8bf39.js.map": "/Agri_Swift/static/js/main.46b8bf39.js.map"
   },
   "entrypoints": [
-    "static/css/main.1449c8c3.css",
-    "static/js/main.94dc4d4e.js"
+    "static/css/main.42014168.css",
+    "static/js/main.46b8bf39.js"
   ]
 }
