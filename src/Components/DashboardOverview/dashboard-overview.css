@@ -1,55 +1,57 @@
 /* Dashboard Overview Container */
 .dashboard-overview-container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* Each column spans 1 fraction of the available space */
   gap: 24px;
 }
 
 /* Dashboard Overview Component */
 .dashboard-overview-component {
-  position: relative;
+  position: relative; /* Position the container relatively */
   background-color: #D9D9D9;
   padding: 20px;
   border-radius: 8px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  margin-bottom: 40px; /* Reduced margin for better spacing */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  cursor: pointer; /* Add pointer cursor on hover */
+  margin-bottom: 59px;
 }
 
 .dashboard-overview-component:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px); /* Move up slightly on hover */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
 }
 
 /* Value and Alt Text */
-.value,
-.alt {
-  position: absolute;
-  width: 100%;
-  text-align: center; /* Center align text */
-  font-size: 16px;
-  color: #333;
+.value, .alt {
+  position: absolute; /* Position both item.value and item.alt absolutely */
+  width: 116px; /* Set width for both */
+  height: 49px; /* Set height for both */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 16px; /* Adjust font size */
+  color: #333; /* Adjust color */
   font-weight: bold;
-  transition: opacity 0.3s ease;
+  margin-left: 32px;
+  transition: opacity 0.3s ease; /* Smooth transition on hover */
 }
 
 .value {
-  top: 20px; /* Adjusted top spacing */
+  top: 10px; /* Adjust the top spacing for item.value */
 }
 
 .alt {
-  bottom: 20px; /* Adjusted bottom spacing */
+  bottom: 10px; /* Adjust the bottom spacing for item.alt */
 }
 
 /* Responsiveness */
 @media screen and (max-width: 768px) {
   .dashboard-overview-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns for smaller screens */
   }
 }
 
 @media screen and (max-width: 480px) {
   .dashboard-overview-container {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Single column for even smaller screens */
   }
 }
