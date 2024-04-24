@@ -2,7 +2,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 100%;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -15,12 +14,13 @@
   color: black;
   font-weight: bold;
   white-space: nowrap;
+  margin-bottom: 56px;
+  margin-left: 60px;
 }
 
 .dashboard-figure-two {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   max-width: 436px;
   height: 152px;
   background-color: #D7D7D7;
@@ -31,7 +31,7 @@
   margin: 0;
 }
 
-.chart-image{
+.chart-image {
   max-width: 100%;
   max-height: 100%;
   margin: auto;
@@ -45,7 +45,7 @@
   margin-bottom: 16px;
   line-height: 24px;
   font-weight: bold;
-  font-size: 20px !important; 
+  font-size: 20px !important;
   white-space: nowrap;
   margin-left: 33px;
   margin-top: 133px;
@@ -53,7 +53,6 @@
 }
 
 .dashboard-figure-three {
-  width: 100%;
   max-width: 252px;
   height: 260px;
   background-color: #D7D7D7;
@@ -65,7 +64,7 @@
   padding: 20px 16px 20px 16px;
 }
 
-.calendar-image{
+.calendar-image {
   width: 220px;
   height: 220px;
   margin-bottom: 20px;
@@ -73,7 +72,6 @@
 }
 
 .fig-four-and-five-wrapper {
-  width: 100%;
   max-width: 344px;
   margin-top: 24px;
   height: 128px;
@@ -90,12 +88,12 @@
   margin-left: 24px;
 }
 
-.dashboard-figure-five{
+.dashboard-figure-five {
   margin-top: 110px;
 }
 
-.figure-five-title{
-  font-size: 24;
+.figure-five-title {
+  font-size: 24px; /* corrected the missing unit */
   font-weight: bold;
   line-height: 32px;
   width: 209px;

@@ -8,6 +8,7 @@ import Settings from './Components/Pages/Settings/settings';
 import './App.css';
 import SignUp from './Components/Pages/SignUp/sign-up';
 import WorkDetails from './Components/Pages/WorkDetails/work-details';
+import logo from '../src/Components/assets/agriculture-logo.svg';
 
 const App = () => {
   const handleLogout = () => {
@@ -18,10 +19,10 @@ const App = () => {
     <Router>
       <div className="container">
         <div className="sidebar">
-          <h2 className='logo'>Agri Swift</h2>
+          <h2 className='logo'>Agri Swift <img src={logo} alt ='agri-logo' className='logo-icon'/></h2>
           <ul>
             <li>
-              <NavLink to="/dashboard" activeClassName="active">Dashboard</NavLink>
+              <NavLink to="/dashboard" activeClassName="active"> Dashboard</NavLink>
             </li>
             <li>
               <NavLink to="/product-listings" activeClassName="active">Product Listings</NavLink>
