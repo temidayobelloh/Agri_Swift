@@ -40,7 +40,7 @@ const App = () => {
         </div>
         <div className="content">
           <Routes>
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/Agri_Swift" element={<Dashboard />} />
             <Route path="/product-listings" element={<ProductListing />} />
             <Route path="/crop-management" element={<CropManagement />} />
             <Route path="/messages" element={<Messages />} />
@@ -49,7 +49,6 @@ const App = () => {
             <Route path="/signin" element={<SignInPage />} /> 
             <Route path="/signup" element={<SignUp/>}/>
             <Route path="/work-details" element={<WorkDetails/>}/>
-            <Route path="/" element={<Redirect to="/dashboard" />} /> {/* Add this line */}
           </Routes>
         </div>
       </div>
