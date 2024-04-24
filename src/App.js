@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, NavLink, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import SignInPage from './Components/Pages/SignIn/sign-in';
 import Dashboard from './Components/Pages/Dashboard/dashboard';
 import ProductListing from './Components/Pages/Product_Listing/product-listing';
@@ -11,10 +11,6 @@ import WorkDetails from './Components/Pages/WorkDetails/work-details';
 import logo from '../src/Components/assets/agriculture-logo.svg';
 
 const App = () => {
-  const handleLogout = () => {
-    // Logout logic here
-  };
-
   return (
     <Router>
       <div className="container">
@@ -40,16 +36,16 @@ const App = () => {
           <div className='dashboard-footer-container'>
             <ul>
               <li>
-                <Link to="/help-center">Help Center</Link>
+                <NavLink to="/help-center">Help Center</NavLink>
               </li>
               <li>
-                <Link to="/contact-us">Contact Us</Link>
+                <NavLink to="/contact-us">Contact Us</NavLink>
               </li>
               <li>
-                <Link to="/privacy-policy">Privacy Policy</Link>
+                <NavLink to="/privacy-policy">Privacy Policy</NavLink>
               </li>
             </ul>
-            <button className='log-out-button' onClick={handleLogout}> Log Out</button>
+            <button className='log-out-button'> Log Out</button>
           </div>
         </div>
         <div className="content">
