@@ -1,10 +1,10 @@
 .dashboard-figure-wrapper {
     display: flex;
-    align-items: flex-start; /* Adjusted alignment */
+    align-items: flex-start;
     justify-content: space-between;
-    width: 100%; /* Added width to ensure proper spacing */
-    max-width: 1080px; /* Maintain max-width */
-    margin: 0 auto; /* Center the container */
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .dashboard-figure-title {
@@ -19,15 +19,23 @@
 
 .dashboard-figure-two {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap if necessary */
-    width: 100%; /* Adjusted width to fit within container */
-    max-width: 400px; /* Maintain max-width */
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 436px;
     height: 152px;
     background-color: #D7D7D7;
     border-radius: 16px;
-    padding: 16px 18px; /* Adjusted padding */
+    padding: 16px 18px;
     text-align: center;
-    margin-bottom: 20px; /* Added margin bottom for spacing */
+    overflow: hidden;
+    margin: 0;
+}
+
+.chart-image{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
 }
 
 .fig-three-title {
@@ -39,32 +47,54 @@
     font-weight: bold;
     font-size: 20px !important; 
     white-space: nowrap;
+    margin-left: 33px;
+    margin-top: 133px;
+    text-align: center;
 }
 
 .dashboard-figure-three {
-    width: 100%; /* Adjusted width to fit within container */
-    max-width: 252px; /* Maintain max-width */
+    width: 100%;
+    max-width: 252px;
     height: 260px;
     background-color: #D7D7D7;
     text-align: center;
     border-radius: 16px;
     align-items: center;
-    margin-bottom: 20px; /* Added margin bottom for spacing */
+    margin-bottom: 20px;
+    margin-left: 24px;
+    padding: 20px 16px 20px 16px;
+}
+.calendar-image{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
 .fig-four-and-five-wrapper {
-    width: 100%; /* Adjusted width to fit within container */
-    max-width: 344px; /* Maintain max-width */
-    margin-top: 24px; /* Added margin top */
+    width: 100%;
+    max-width: 344px;
+    margin-top: 24px;
     height: 128px;
 }
 
 .dashboard-figure-four,
 .dashboard-figure-five {
-    width: 100%; /* Adjusted width to fit within container */
-    height: auto; /* Allow height to adjust based on content */
+    width: 100%;
+    height: auto;
     background-color: #D7D7D7;
     border-radius: 16px;
     padding: 16px;
-    margin-bottom: 24px; /* Added margin bottom */
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+.dashboard-figure-five{
+    margin-top: 110px;
+}
+.figure-five-title{
+    font-size: 24;
+    font-weight: bold;
+    line-height: 32px;
+    width: 209px;
+    margin-bottom: 16px;
 }

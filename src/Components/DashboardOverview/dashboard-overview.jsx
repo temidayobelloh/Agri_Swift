@@ -1,6 +1,6 @@
 import React from 'react';
 import './dashboard-overview.css';
-import bagHappyImage from '../../Components/assets/bag-happy.svg';
+import bagHappyImage from '../../Components/assets/first frame.svg';
 import frame1Image from '../../Components/assets/frame1.svg';
 import frame2Image from '../../Components/assets/frame2.svg';
 import frame3Image from '../../Components/assets/frame 3.svg';

@@ -13,7 +13,7 @@ const App = () => {
     <Router>
       <div className="container">
         <div className="sidebar">
-          <h2 className='logo'>Logo</h2>
+          <h2 className='logo'>Agri Swift</h2>
           <ul>
             <li>
               <NavLink to="/" activeClassName="active">Dashboard</NavLink>

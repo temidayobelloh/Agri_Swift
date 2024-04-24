@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import img from '../assets/Background image.svg'; 
 import arrowButton from '../assets/arrow-right.svg'; // Importing the arrow icon
 import './product-categories.css';
+import ProductList from '../ProductList/product-list';
 
 const ProductCategories = () => {
   const [currentCategory, setCurrentCategory] = useState(0);
@@ -33,6 +34,7 @@ const ProductCategories = () => {
           </div>
         ))}
       </div>
+      <ProductList/>
     </div>
   );
 };
