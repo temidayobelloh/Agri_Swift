@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, NavLink, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink, Routes, Redirect } from 'react-router-dom';
 import SignInPage from './Components/Pages/SignIn/sign-in';
 import Dashboard from './Components/Pages/Dashboard/dashboard';
 import ProductListing from './Components/Pages/Product_Listing/product-listing';
@@ -19,7 +19,7 @@ const App = () => {
           <h2 className='logo'>Agri Swift</h2>
           <ul>
             <li>
-              <NavLink to="/" activeClassName="active">Dashboard</NavLink>
+              <NavLink to="/dashboard" activeClassName="active">Dashboard</NavLink>
             </li>
             <li>
               <NavLink to="/product-listings" activeClassName="active">Product Listings</NavLink>
@@ -40,7 +40,7 @@ const App = () => {
         </div>
         <div className="content">
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/product-listings" element={<ProductListing />} />
             <Route path="/crop-management" element={<CropManagement />} />
             <Route path="/messages" element={<Messages />} />
@@ -49,6 +49,7 @@ const App = () => {
             <Route path="/signin" element={<SignInPage />} /> 
             <Route path="/signup" element={<SignUp/>}/>
             <Route path="/work-details" element={<WorkDetails/>}/>
+            <Route path="/" element={<Redirect to="/dashboard" />} /> {/* Add this line */}
           </Routes>
         </div>
       </div>
