@@ -1,93 +1,73 @@
-/* Styles for Dashboard Title */
 .dashboard-title {
-  width: 100%; /* Full width */
-  font-size: 32px; /* Increased font size for emphasis */
+  width: 174px;
+  font-size: 24px;
   font-weight: bold;
-  line-height: 1.2; /* Adjusted line height for better readability */
-  margin-bottom: 20px; /* Increased margin for separation */
-  text-align: center; /* Center align text */
-  white-space: nowrap;
 }
 
-/* Styles for Dashboard Date */
 .dashboard-date {
-  width: 100%; /* Full width */
+  width: 174px;
   margin: 0;
-  font-size: 16px; /* Slightly reduced font size */
-  margin-bottom: 24px; /* Reduced margin */
-  text-align: center; /* Center align text */
+  font-size: 16px;
+  margin-bottom: 40px;
 }
 
-/* Styles for Dashboard Container */
 .dashboard-container {
-  max-width: 100%; /* Full width */
-  width: 100%; /* Full width */
+  width: 900px; /* Set a fixed width */
 }
 
-/* Styles for Dashboard Wrapper */
 .dashboard-wrapper {
-  margin: 0 auto; /* Center the content horizontally */
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
-/* Styles for Dashboard User Container */
 .dashboard-user-container:hover {
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); /* Slightly increased shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   cursor: pointer;
 }
 
 .dashboard-user-container {
-  max-width: 100%;
-  height: auto; /* Adjusted height to accommodate dynamic content */
+  max-width: 1080px;
+  height: 240px;
   background-color: #2c3e50;
   border-radius: 16px;
-  margin: 0 auto; /* Center the container horizontally */
+  margin-left: 0px;
   position: relative;
-  overflow: hidden; /* Hidden overflow to contain absolute positioned elements */
+  overflow: visible; 
   color: white;
 }
 
-/* Styles for Dashboard User Image */
 .dashboard-user-image {
-  width: 40%; /* Adjusted width for responsiveness */
-  max-width: 400px; /* Set max-width for larger screens */
-  height: auto; /* Auto height to maintain aspect ratio */
-  position: absolute;
-  top: -20%; /* Adjusted position relative to container */
-  right: 10%; /* Adjusted position relative to container */
+  width: 370px; 
+  height: 326px; /* Set the height of the image */
+  position: absolute; /* Position the image absolutely */
+  top: -64px; 
+  left: 530px; /* Move the image 644px to the left */
 }
 
-/* Styles for Dashboard User Wrapper */
 .dashboard-user-wrapper {
-  padding: 3%; /* Adjusted padding for responsiveness */
+  padding: 40px;
 }
 
-/* Styles for Dashboard User */
 .dashboard-user {
   font-family: Montserrat;
-  font-size: 36px; /* Slightly larger font size */
+  font-size: 36px;
   font-weight: bold;
-  line-height: 1.2; /* Adjusted line height */
-  margin: 0;
-  text-align: center; /* Center align text */
+  line-height: 48px;
+  margin: 0px;
 }
 
-/* Styles for Dashboard User Title */
 .dashboard-user-title {
-  font-size: 18px; /* Adjusted font size */
-  width: 100%; /* Full width */
-  max-width: 500px; /* Set max-width for larger screens */
-  margin: 0 auto; /* Center the title horizontally */
-  margin-top: 12px; /* Reduced margin */
-  text-align: center; /* Center align text */
+  font-size: 18px;
+  width: 580px;
+  height: 48px;
+  margin-top: 16px;
 }
 
-/* Styles for Overview Text */
 .overview-text {
-  font-size: 18px; /* Adjusted font size */
+  font-size: 24px;
   font-weight: bold;
-  width: 100%; /* Full width */
-  margin-bottom: 16px; /* Reduced margin */
+  width: 120px;
+  margin-bottom: 24px;
+  margin: 26px;
   margin-left: 0;
-  text-align: center; /* Center align text */
 }
