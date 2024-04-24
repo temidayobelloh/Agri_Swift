@@ -41,6 +41,7 @@ const App = () => {
         <div className="content">
           <Routes>
             <Route path="/Agri_Swift" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/product-listings" element={<ProductListing />} />
             <Route path="/crop-management" element={<CropManagement />} />
             <Route path="/messages" element={<Messages />} />
