@@ -31,9 +31,6 @@ const App = () => {
               <NavLink to="/messages" activeClassName="active">Messages</NavLink>
             </li>
             <li>
-              <NavLink to="/notifications" activeClassName="active">Notifications</NavLink>
-            </li>
-            <li>
               <NavLink to="/settings" activeClassName="active">Settings</NavLink>
             </li>
           </ul>
@@ -45,7 +42,6 @@ const App = () => {
             <Route path="/product-listings" element={<ProductListing />} />
             <Route path="/crop-management" element={<CropManagement />} />
             <Route path="/messages" element={<Messages />} />
-            <Route path="/notifications" element={<Notifications />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/signin" element={<SignInPage />} /> 
             <Route path="/signup" element={<SignUp/>}/>
