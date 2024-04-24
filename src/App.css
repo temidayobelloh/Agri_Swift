@@ -59,7 +59,6 @@ body {
 
 .sidebar li {
   margin-bottom: 10px;
-
 }
 
 .sidebar a {
@@ -94,6 +93,7 @@ body {
   color: white;
   text-align: left;
   margin-top: 50px;
+  padding: 20px; /* Added padding */
 }
 
 .dashboard-footer-container ul {
@@ -104,8 +104,6 @@ body {
 
 .dashboard-footer-container ul li {
   margin-bottom: 10px;
-  margin-left: 0;
-  
 }
 
 .dashboard-footer-container ul li a {

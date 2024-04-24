@@ -1,76 +1,92 @@
-/* Messages.css */
-
+/* Product Listing Container */
 .product-listing-container {
-  max-width: 1080px; /* Set max-width */
+  max-width: 100%; /* Full width */
+  width: 100%; /* Full width */
   margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add some horizontal padding */
 }
 
+/* Product Nav Wrapper */
 .product-nav-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Adjusted spacing */
+  justify-content: space-between;
   height: 72px;
+  padding: 0 20px; /* Add some horizontal padding */
 }
 
+/* Product Title */
 .product-title {
   font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 28px; /* Increased font size */
+  line-height: 1.2; /* Adjusted line height */
   font-family: Montserrat;
   margin: 0;
   padding: 0;
-  width: 114px;
+  max-width: 200px; /* Adjusted max-width */
+  overflow: hidden; /* Prevent long titles from overflowing */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+  white-space: nowrap; /* Prevent wrapping */
 }
 
+/* Product Title Sub */
 .product-title-sub {
   font-size: 16px;
-  line-height: 24px;
-  font-family: Lato; /* Changed font family */
-  color: #555; /* Adjusted color */
+  line-height: 1.4; /* Adjusted line height */
+  font-family: Lato;
+  color: #555;
   margin: 0;
 }
 
+/* Message Chat Container */
 .message-chat-container {
   margin-top: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  overflow: hidden; /* Ensure no overflow */
+  overflow: hidden;
 }
 
+/* Message Header */
 .message-header {
-  background-color: #f5f5f5; /* Light background */
+  background-color: #f5f5f5;
   padding: 10px 20px;
-  border-bottom: 1px solid #ddd; /* Light border */
+  border-bottom: 1px solid #ddd;
 }
 
+/* Message Body */
 .message-body {
   padding: 20px;
   max-height: 400px;
   overflow-y: auto;
 }
 
+/* Message */
 .message {
-  padding: 10px 20px; /* Padding increased */
+  padding: 12px 24px; /* Adjusted padding */
   margin-bottom: 10px;
-  border-radius: 20px; /* Rounded corners */
-  word-wrap: break-word; /* Wrap long text */
+  border-radius: 24px; /* Increased border radius for a bubble effect */
+  word-wrap: break-word;
 }
 
+/* Sent Message */
 .sent {
-  background-color: #DCF8C6; /* Light green for sent messages */
+  background-color: #DCF8C6;
   align-self: flex-end;
 }
 
+/* Received Message */
 .received {
-  background-color: #f9f9f9; /* Light gray for received messages */
+  background-color: #f9f9f9;
 }
 
+/* Message Input */
 .message-input {
   display: flex;
   padding: 20px;
-  border-top: 1px solid #ddd; /* Light border */
+  border-top: 1px solid #ddd;
 }
 
+/* Message Input Textbox */
 .message-input input {
   flex: 1;
   height: 48px;
@@ -81,9 +97,10 @@
   outline: none;
 }
 
+/* Message Input Button */
 .message-input button {
-  height: 48px; /* Reduced button height */
-  padding: 0; /* Reduced button padding */
+  height: 48px;
+  padding: 0 24px; /* Adjusted horizontal padding */
   border: none;
   border-radius: 24px;
   font-size: 16px;
@@ -93,6 +110,7 @@
   transition: background-color 0.3s ease;
 }
 
+/* Message Input Button Hover */
 .message-input button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3;
 }

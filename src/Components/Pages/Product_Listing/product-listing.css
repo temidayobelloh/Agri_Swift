@@ -1,15 +1,21 @@
+/* Product Listing Container */
 .product-listing-container {
-  max-width: 1080px; /* Set max-width */
-  margin: 0; /* Center the container */
+  max-width: 100%; /* Full width */
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add horizontal padding for better spacing */
 }
 
+/* Product Nav Wrapper */
 .product-nav-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Adjusted spacing */
+  justify-content: space-between;
   height: 72px;
+  padding: 0 20px; /* Add horizontal padding for better spacing */
 }
 
+/* Product Title */
 .product-title {
   font-weight: bold;
   font-size: 24px;
@@ -17,48 +23,57 @@
   font-family: Montserrat;
   margin: 0;
   padding: 0;
-  width: 114px;
+  max-width: 200px; /* Adjusted max-width for responsiveness */
+  overflow: hidden; /* Prevent long titles from overflowing */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+  white-space: nowrap; /* Prevent wrapping */
 }
 
+/* Product Title Sub */
 .product-title-sub {
   font-size: 16px;
   line-height: 24px;
-  font-family: Lato; /* Changed font family */
-  color: #555; /* Adjusted color */
+  font-family: Lato;
+  color: #555;
   margin: 0;
 }
 
+/* Search Input Wrapper */
 .search-input-wrapper {
-  width: 436px;
-  height: 48px; /* Reduced height for better proportion */
-  padding: 12px 24px; /* Adjusted padding */
-  border-radius: 24px; /* Increased border radius for a softer look */
+  width: 100%; /* Full width */
+  height: 48px;
+  padding: 12px 20px; /* Adjusted padding for better proportion */
+  border-radius: 24px;
   border: 1px solid #ccc; /* Added border for better visibility */
   font-size: 16px;
   color: #333;
   margin: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+/* User Title Wrapper */
 .user-title-wrapper {
-  width: 220px;
-  height: 48px; /* Reduced height for better proportion */
-  border-radius: 24px; /* Increased border radius for consistency */
+  width: 100%; /* Full width */
+  height: 48px;
+  border-radius: 24px;
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 20px auto; /* Adjusted margin for better spacing */
 }
 
+/* User Title Name */
 .user-title-name {
-  font-size: 18px; /* Reduced font size for better alignment */
-  color: #333; /* Adjusted color */
+  font-size: 18px;
+  color: #333;
   margin: 0;
 }
 
+/* User Title Init */
 .user-title-init {
-  font-size: 18px; /* Reduced font size for better alignment */
-  margin-left: 8px; /* Adjusted spacing */
+  font-size: 18px;
+  margin-left: 8px;
   font-weight: bold;
-  color: #333; /* Adjusted color */
+  color: #333;
 }

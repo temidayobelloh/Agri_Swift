@@ -1,37 +1,45 @@
+/* Styles for First Background */
 .first-background {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-  }
-  
-  input[type="radio"] {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-  }
-  
-  .logo {
-    width: 105px;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 56px;
-    color: black;
-    text-align: center;
-  }
-  
-  .sign-up-button {
-    width: 400px;
-    height: 48px;
-    border: 1px solid #323232;
-    color: black;
-    background-color: transparent;
-    border-radius: 16px;
-    padding: 0;
-    opacity: 0;
-  }
-  
-  /* Set minimum width for label elements */
-  label {
-    min-width: 108px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Soft gray background */
+}
+
+/* Styles for Radio Inputs */
+input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Styles for Logo */
+.logo {
+  width: 100%; /* Full width */
+  max-width: 150px; /* Adjusted maximum width */
+  font-size: 24px; /* Slightly larger font size */
+  font-weight: bold;
+  line-height: 56px;
+  color: black;
+  text-align: center;
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+/* Styles for Sign-up Button */
+.sign-up-button {
+  width: 100%; /* Full width */
+  max-width: 400px; /* Adjusted maximum width */
+  height: 48px;
+  border: 2px solid #323232; /* Increased border thickness */
+  color: black;
+  background-color: transparent;
+  border-radius: 24px; /* Rounded border */
+  padding: 0;
+  opacity: 0.8; /* Reduced opacity */
+  display: block; /* Change to block element */
+  margin: 24px auto; /* Center the button horizontally with some margin */
+}
+
+/* Set minimum width for label elements */
+label {
+  min-width: 100px; /* Adjusted minimum width */
+}
