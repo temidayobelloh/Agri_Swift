@@ -1,17 +1,19 @@
-import { BrowserRouter as Router, Route, NavLink, Routes, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink, Routes, Link } from 'react-router-dom';
 import SignInPage from './Components/Pages/SignIn/sign-in';
 import Dashboard from './Components/Pages/Dashboard/dashboard';
 import ProductListing from './Components/Pages/Product_Listing/product-listing';
 import CropManagement from './Components/Pages/CropManagement/crop-management';
 import Messages from './Components/Pages/Messages/messages';
 import Settings from './Components/Pages/Settings/settings';
-import Notifications from './Components/Pages/Notification/notification';
-import DashboardFooter from './Components/Dashboard-Footer/dashboard-footer';
 import './App.css';
 import SignUp from './Components/Pages/SignUp/sign-up';
 import WorkDetails from './Components/Pages/WorkDetails/work-details';
 
 const App = () => {
+  const handleLogout = () => {
+    // Logout logic here
+  };
+
   return (
     <Router>
       <div className="container">
@@ -34,6 +36,20 @@ const App = () => {
               <NavLink to="/settings" activeClassName="active">Settings</NavLink>
             </li>
           </ul>
+          <div className='dashboard-footer-container'>
+            <ul>
+              <li>
+                <Link to="/help-center">Help Center</Link>
+              </li>
+              <li>
+                <Link to="/contact-us">Contact Us</Link>
+              </li>
+              <li>
+                <Link to="/privacy-policy">Privacy Policy</Link>
+              </li>
+            </ul>
+            <button className='log-out-button' onClick={handleLogout}> Log Out</button>
+          </div>
         </div>
         <div className="content">
           <Routes>
@@ -49,7 +65,6 @@ const App = () => {
           </Routes>
         </div>
       </div>
-      <DashboardFooter />
     </Router>
   );
 };
