@@ -21,7 +21,7 @@ const ProductListing = () => {
           />
         </div>
         <div className='user-title-wrapper'>
-          <p className='user-title-name'>Maria Tolu</p> <p className='user-title-init'>MT</p>
+          <p className='user-title-name'>Maria Tolu</p> <p className='user-title-init'>(MT)</p>
         </div>
       </div>
       <ProductCategories />

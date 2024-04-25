@@ -1,25 +1,24 @@
-/* Product Listing Container */
+
 .product-listing-container {
-  max-width: 100%; /* Full width */
-  width: 100%; /* Full width */
-  margin: 0 auto; /* Center the container */
-  padding: 0 20px; /* Add some horizontal padding */
+  max-width: 100%; 
+  width: 100%;
+  margin: 0 auto; 
+  padding: 0 20px; 
 }
 
-/* Product Nav Wrapper */
 .product-nav-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 72px;
-  padding: 0 20px; /* Add some horizontal padding */
+  padding: 0 20px; 
 }
 
-/* Product Title */
+
 .product-title {
   font-weight: bold;
-  font-size: 28px; /* Increased font size */
-  line-height: 1.2; /* Adjusted line height */
+  font-size: 28px;
+  line-height: 1.2;
   font-family: Montserrat;
   margin: 0;
   padding: 0;
@@ -41,34 +40,33 @@
 /* Message Chat Container */
 .message-chat-container {
   margin-top: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
   overflow: hidden;
 }
 
 /* Message Header */
 .message-header {
-  background-color: #f5f5f5;
+  background-color: #2c3e50;
   padding: 10px 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  color: white;
 }
 
-/* Message Body */
 .message-body {
   padding: 20px;
   max-height: 400px;
   overflow-y: auto;
 }
 
-/* Message */
+
 .message {
-  padding: 12px 24px; /* Adjusted padding */
-  margin-bottom: 10px;
-  border-radius: 24px; /* Increased border radius for a bubble effect */
+  padding: 12px 24px; 
+  margin-bottom: 15px;
+  border-radius: 27px;
   word-wrap: break-word;
 }
 
-/* Sent Message */
 .sent {
   background-color: #DCF8C6;
   align-self: flex-end;
@@ -92,25 +90,26 @@
   height: 48px;
   padding: 12px 24px;
   border-radius: 24px;
-  border: 1px solid #ccc;
+  border: 1px solid #2c3e50;
   font-size: 16px;
   outline: none;
 }
 
-/* Message Input Button */
+
 .message-input button {
   height: 48px;
-  padding: 0 24px; /* Adjusted horizontal padding */
+  padding: 0 24px; 
   border: none;
   border-radius: 24px;
   font-size: 16px;
-  background-color: #007BFF;
+  background-color: #2c3e50;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 10px;
 }
 
-/* Message Input Button Hover */
+
 .message-input button:hover {
   background-color: #0056b3;
 }

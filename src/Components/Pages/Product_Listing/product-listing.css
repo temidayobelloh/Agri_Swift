@@ -33,7 +33,7 @@
   height: 48px; /* Reduced height for better proportion */
   padding: 12px 24px; /* Adjusted padding */
   border-radius: 24px; /* Increased border radius for a softer look */
-  border: 1px solid #ccc; /* Added border for better visibility */
+  border: 2px solid #2c3e50; /* Added border for better visibility */
   font-size: 16px;
   color: #333;
   margin: 0;
@@ -43,7 +43,7 @@
   width: 220px;
   height: 48px; /* Reduced height for better proportion */
   border-radius: 24px; /* Increased border radius for consistency */
-  background-color: #f5f5f5;
+  background-color: #2c3e50;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@
 
 .user-title-name {
   font-size: 18px; /* Reduced font size for better alignment */
-  color: #333; /* Adjusted color */
+  color: white; /* Adjusted color */
   margin: 0;
 }
 
@@ -60,5 +60,5 @@
   font-size: 18px; /* Reduced font size for better alignment */
   margin-left: 8px; /* Adjusted spacing */
   font-weight: bold;
-  color: #333; /* Adjusted color */
+  color: white; /* Adjusted color */
 }
