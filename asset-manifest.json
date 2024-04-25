@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/Agri_Swift/static/css/main.ca0250f5.css",
-    "main.js": "/Agri_Swift/static/js/main.48c25c59.js",
+    "main.css": "/Agri_Swift/static/css/main.f1b54834.css",
+    "main.js": "/Agri_Swift/static/js/main.4c8a71b5.js",
     "static/media/order-listings.svg": "/Agri_Swift/static/media/order-listings.7cc47d0d90c6657184b1a67d9b5323c6.svg",
-    "static/media/account settings one.svg": "/Agri_Swift/static/media/account settings one.a32ddaf7b74c254a1e0a45c38f409678.svg",
     "static/media/Young woman harvesting.svg": "/Agri_Swift/static/media/Young woman harvesting.9019a12d6e8519334fbef7c33f9ad65b.svg",
     "static/media/Grid.svg": "/Agri_Swift/static/media/Grid.589756037d9b4cdd882e19c0473bd40a.svg",
     "static/media/Chart.svg": "/Agri_Swift/static/media/Chart.8c54e00a39a7726367279121f332adc6.svg",
@@ -17,11 +16,11 @@
     "index.html": "/Agri_Swift/index.html",
     "static/media/arrow-right.svg": "/Agri_Swift/static/media/arrow-right.88384672317c2e3f8f6c925e916df6c4.svg",
     "static/media/search icon.svg": "/Agri_Swift/static/media/search icon.82d3481840537f55a197ec3b7d2e44f5.svg",
-    "main.ca0250f5.css.map": "/Agri_Swift/static/css/main.ca0250f5.css.map",
-    "main.48c25c59.js.map": "/Agri_Swift/static/js/main.48c25c59.js.map"
+    "main.f1b54834.css.map": "/Agri_Swift/static/css/main.f1b54834.css.map",
+    "main.4c8a71b5.js.map": "/Agri_Swift/static/js/main.4c8a71b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca0250f5.css",
-    "static/js/main.48c25c59.js"
+    "static/css/main.f1b54834.css",
+    "static/js/main.4c8a71b5.js"
   ]
 }
