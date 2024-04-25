@@ -1,8 +1,15 @@
-.settings-wrapper {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-  }
-  
- 
-  
+.settings-layout {
+  display: block;
+  max-height: 844px;
+  margin-top: 40px;
+}
+
+.layout-one {
+  width: 368px;
+  height: 156px;
+  padding: 24px 0px 0px 0px;
+  padding: 24px;
+  margin-top: 16px;
+  border-radius: 16px;
+  background-color: #f0f0f0; /* Example background color */
+}
