@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import orders from '../../assets/order-listings.svg';
+import searchIcon from '../../assets/search icon.svg';
 
 const CropManagement = () => {
   const [customer, setCustomer] = useState('Customers');
@@ -17,28 +18,27 @@ const CropManagement = () => {
           <p className='product-title'> Orders </p>
           <p className='product-title-sub'>Total products: 12,762</p>
         </div>
-        <div>
+        <div className='search-input'>
           <input
             className='search-input-wrapper'
             type='text'
             placeholder='Search for products...'
           />
+
         </div>
         <div className='user-title-wrapper'>
-          <p className='user-title-name'>Maria Tolu</p> <p className='user-title-init'>MT</p>
+          <p className='user-title-name'>Maria Tolu</p> <p className='user-title-init'>(MT)</p>
         </div>
       </div>
       <div className="select-container">
         <select value={customer} onChange={(e) => setCustomer(e.target.value)} className="select-element">
           <option>Customers</option>
           <option>Lizbeth Chioma</option>
-          {/* Add more options here */}
         </select>
 
         <select value={orderDate} onChange={(e) => setOrderDate(e.target.value)} className="select-element">
           <option>Order Dates</option>
           <option>Mar 15, 2024, 6:35 PM</option>
-          {/* Add more options here */}
         </select>
 
         <select value={address} onChange={(e) => setAddress(e.target.value)} className="select-element">

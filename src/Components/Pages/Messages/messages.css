@@ -68,13 +68,13 @@
 }
 
 .sent {
-  background-color: #DCF8C6;
+  background-color: #96d667;
   align-self: flex-end;
 }
 
 /* Received Message */
 .received {
-  background-color: #f9f9f9;
+  background-color: #d1c3c3;
 }
 
 /* Message Input */
