@@ -1,0 +1,118 @@
+.logo {
+    width: 105px;
+    height: 56px;
+    color: #ffffff;
+    font-size: 40px;
+    white-space: nowrap;
+    margin-left: 32px;
+  }
+  /* Container styles */
+  .container {
+    display: flex;
+  }
+  /* Sidebar styles */
+  .sidebar {
+    flex: 0 0 245px;
+    background-color: #34495e;
+    color: white;
+    padding: 16px 0px 0px 0px;
+    height: 100vh;
+  }
+  
+  .sidebar:hover {
+    background-color: #2c3e50;
+  }
+  
+  .sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 255px;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    background-color: #2c3e50;
+    border-left: 4px solid #ffffff;
+  }
+  
+  .sidebar a.active {
+    background-color: #2c3e50;
+    border-left: 4px solid #ffffff;
+  }
+  
+  /* Content styles */
+  .content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  }
+  
+  /* Dashboard footer styles */
+  .dashboard-footer-container {
+    background-color: #34495e;
+    color: white;
+    text-align: left;
+    margin-top: 50px;
+    padding: 10px;
+    margin-left: 0px;
+  }
+  
+  .dashboard-footer-container ul {
+    padding: 0;
+    margin-left: 0;
+  }
+  
+  .dashboard-footer-container ul li {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  
+  .dashboard-footer-container ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .dashboard-footer-container ul li a:hover {
+    background-color: #2c3e50;
+  }
+  
+  .log-out-button {
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 12px 16px;
+    border-radius: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  .log-out-button:hover {
+    background-color: #5d81a4;
+    transform: translateY(-5px);
+  }
+  
