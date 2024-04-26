@@ -7,9 +7,8 @@ import Messages from '../Messages/messages';
 import Settings from '../Settings/settings';
 import './user-dashboard.css';
 import SignUp from '../SignUp/sign-up';
-import WorkDetails from '../WorkDetails/work-details';
 import logo from '../../assets/agriculture-logo.svg';
-import HomePage from '../Home Page/home-page';
+import HomePage from '../HomePage/home-page';
 
 const UserDashboard = () => {
   return (
@@ -49,12 +48,14 @@ const UserDashboard = () => {
                 <NavLink to="/privacy-policy">Privacy Policy</NavLink>
               </li>
             </ul>
-            <button className='log-out-button'> Log Out</button>
+            <NavLink to="/home"> 
+              <button className='log-out-button'>Log Out</button>
+            </NavLink>
           </div>
         </div>
         <div className="content">
           <Routes>
-            <Route path="/Agri_Swift" element={<Dashboard />} />
+            <Route path="/Agri_Swift" element={<HomePage/>} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/product-listings" element={<ProductListing />} />
@@ -63,7 +64,6 @@ const UserDashboard = () => {
             <Route path="/settings" element={<Settings />} />
             <Route path="/signin" element={<SignInPage />} /> 
             <Route path="/signup" element={<SignUp/>}/>
-            <Route path="/work-details" element={<WorkDetails/>}/>
           </Routes>
         </div>
       </div>

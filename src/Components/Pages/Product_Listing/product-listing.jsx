@@ -13,7 +13,7 @@ const ProductListing = () => {
         </div>
         <div>
           <input
-            className='search-input-wrapper'
+            className='listing-input-wrapper'
             type='text'
             value={search}
             placeholder='Search for products...'

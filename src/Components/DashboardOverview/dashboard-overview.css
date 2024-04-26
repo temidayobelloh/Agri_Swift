@@ -37,10 +37,12 @@
 
 .value {
   top: 10px; /* Adjust the top spacing for item.value */
+  margin-top: 1px; 
+  
 }
 
 .alt {
-  bottom: 10px; /* Adjust the bottom spacing for item.alt */
+  bottom: 10px; 
 }
 
 /* Responsiveness */
