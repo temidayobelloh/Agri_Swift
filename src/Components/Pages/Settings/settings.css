@@ -1,18 +1,22 @@
 .settings-layout {
-  display: block;
-  max-height: 436px; /* Limiting the max height */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute items evenly */
   margin-top: 2px;
   margin-left: 9px;
 }
-.heading{
+
+.heading {
   margin-bottom: 20px;
   margin-left: 10px;
 }
-.sub-heading{
+
+.sub-heading {
   margin-left: 52px;
 }
+
 .layout-one {
-  width: 368px;
+  flex-basis: calc(50% - 10px); /* Adjust as needed to fit two items per row */
   height: 156px;
   padding: 15px;
   border-radius: 16px;
@@ -20,8 +24,4 @@
   color: black;
   margin-top: 16px;
 }
-.users{
-  margin-left: 7 px;
-  width: 40px;
-  min-height: 40px;
-}
+
