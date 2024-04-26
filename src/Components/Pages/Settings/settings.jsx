@@ -1,5 +1,6 @@
 import React from 'react';
 import './settings.css';
+import user from '../../assets/user-icon.svg';
 
 const Settings = () => {
   return (
@@ -21,12 +22,11 @@ const Settings = () => {
         </div>
       </div>
       <div className='settings-layout'>
-        <div className='layout-one'> <img alt="icon"/> <b>Account</b><p>Account setting for personalization options for a tailored experience</p></div>
-        <div className='layout-one'> <img alt="icon"/> <b>Notification</b><p>Account setting for personalization options for a tailored experience</p></div>
-        <div className='layout-one'> <img alt="icon"/> <b>General</b><p>Account setting for personalization options for a tailored experience</p></div>
-        <div className='layout-one'> <img alt="icon"/> <b>Accesibility</b><p>Account setting for personalization options for a tailored experience</p></div>
-        <div className='layout-one'> <img alt="icon"/> <b>Help & Support</b><p>Account setting for personalization options for a tailored experience</p></div>
-        </div>
+        <div className='layout-one'> <img className='users' src={user} alt="icon"/> <b className='heading'>Account</b><p className='sub-heading'>Account setting for personalization options for a tailored experience</p></div>
+        <div className='layout-one'> <img className='users' src={user} alt="icon"/> <b className='heading'>Notification</b><p className='sub-heading'>Account setting for personalization options for a tailored experience</p></div>
+        <div className='layout-one'> <img className='users' src={user} alt="icon"/> <b className='heading'>General</b><p className='sub-heading'>Account setting for personalization options for a tailored experience</p></div>
+        <div className='layout-one'> <img className='users' src={user} alt="icon"/> <b className='heading'>Accesibility</b><p className='sub-heading'>Account setting for personalization options for a tailored experience</p></div>
+      </div>
     </div>
   );
 }

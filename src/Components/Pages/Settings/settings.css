@@ -1,16 +1,27 @@
 .settings-layout {
   display: block;
-  max-height: 844px;
-  margin-top: 40px;
+  max-height: 436px; /* Limiting the max height */
+  margin-top: 2px;
+  margin-left: 9px;
 }
-
+.heading{
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.sub-heading{
+  margin-left: 52px;
+}
 .layout-one {
   width: 368px;
   height: 156px;
-  padding: 24px 0px 0px 0px;
-  padding: 24px;
-  margin-top: 16px;
+  padding: 15px;
   border-radius: 16px;
-  background-color: #67819b;
-  color: white;
+  background-color: #F0F0F0;
+  color: black;
+  margin-top: 16px;
+}
+.users{
+  margin-left: 7 px;
+  width: 40px;
+  min-height: 40px;
 }
