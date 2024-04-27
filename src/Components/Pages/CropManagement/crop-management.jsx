@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import orders from '../../assets/order-listings.svg';
-import searchIcon from '../../assets/search icon.svg';
+// import orders from '../../assets/order-listings.svg';
+// import searchIcon from '../../assets/search icon.svg';
 
 const CropManagement = () => {
   const [customer, setCustomer] = useState('Customers');

@@ -4,8 +4,7 @@ const DashboardFooter = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // Perform any logout logic here
-    // Redirect to the sign-in component
+    sessionStorage.removeItem('token');
     navigate('/signin');
   };
 

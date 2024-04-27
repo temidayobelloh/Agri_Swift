@@ -85,3 +85,12 @@
     margin-top: 10px;
   }
   
+
+  .confirmation-message {
+    background-color: #e6f7ff; /* Light blue background */
+    color: #0066cc; /* Blue text color */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    margin-top: 10px; /* Add top margin */
+  }
+  
