@@ -91,3 +91,44 @@
   line-height: 32px;
   margin-bottom: 16px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .dashboard-figure-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dashboard-figure-title {
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+  
+  .dashboard-figure-three {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  
+  .fig-four-and-five-wrapper {
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .dashboard-figure-four,
+  .dashboard-figure-five {
+    width: calc(50% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dashboard-figure-two,
+  .dashboard-figure-three,
+  .dashboard-figure-four,
+  .dashboard-figure-five {
+    margin-left: 0;
+  }
+}

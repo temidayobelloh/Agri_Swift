@@ -7,7 +7,7 @@
 }
 
 .select-container {
-  flex: 0 0 calc(20% - 48px); /* Adjusted to include the gap */
+  flex: 0 0 calc(20% - 48px); 
   margin-bottom: 20px;
   margin-top: 25px;
 }
@@ -35,8 +35,8 @@
 }
 
 .select-container select option {
-  width: 171px; /* Set width to match select element */
-  padding: 8px 16px; /* Adjust padding */
+  width: 171px; 
+  padding: 8px 16px; 
   border-radius: 8px;
   background-color: #5d81a4;
   font-size: 16px;
@@ -54,12 +54,18 @@
 
 @media screen and (max-width: 1080px) {
   .select-container {
-    flex: 0 0 calc(33.33% - 48px); /* Adjust flex-basis to accommodate for smaller screen and the gap */
+    flex: 0 0 calc(33.33% - 48px); 
   }
 }
 
 @media screen and (max-width: 768px) {
   .select-container {
-    flex-basis: calc(50% - 48px); /* Adjust flex-basis for smaller screens and the gap */
+    flex-basis: calc(50% - 48px); 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .select-container {
+    flex-basis: calc(100% - 48px); 
   }
 }
