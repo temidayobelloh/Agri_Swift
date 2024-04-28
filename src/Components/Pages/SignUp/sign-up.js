@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import './sign-up.css';
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
+
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     fullname: '',
     email: '',
@@ -9,6 +14,9 @@ const SignUp = () => {
     password: '',
     retypePassword: ''
   });
+
+  const [confirmationMessage, setConfirmationMessage] = useState('');
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,10 +26,38 @@ const SignUp = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData); // Log the form values to the console
-    alert('Sign up successful!'); // Show alert for successful sign up
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault();
+      const url = 'https://agriswift-backend.onrender.com/auth/register';
+     
+      const userData = {
+        fullname: formData.fullname,
+        email: formData.email,
+        phoneNumber: formData.phoneNumber,
+        password: formData.password,
+        retypePassword: formData.retypePassword
+      };
+
+
+       // Make a POST request to the backend
+       const response = await axios.post(url, userData);
+
+       // Handle the response
+       console.log('Registration successful:', response);
+
+      setConfirmationMessage(`Welcome ${formData.fullname}.. Please check your email for signup confirmation.`); 
+      
+      setTimeout (() => {
+        navigate('/signin'); // Redirect to login page after 6 second
+      }, 6000)
+      
+
+    } catch (error) {
+      console.error('Error occurred:', error.response.data);
+      alert('Sign up failed. Please try again.'); // Show alert for failed sign up
+    }
+  
   };
 
   return (
@@ -30,6 +66,7 @@ const SignUp = () => {
       <div className='second-sign-up-container'>
         <form className="sign-up" onSubmit={handleSubmit}>
           <h3>Sign Up</h3>
+          {confirmationMessage && <p className="confirmation-message" >{confirmationMessage}</p>} 
           <div className="form-fields">
             <label htmlFor="fullname">Full name:</label>
             <input type="text" id="fullname" name="fullname" value={formData.fullname} onChange={handleChange} placeholder="John Champion" />

@@ -1,11 +1,50 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState }  from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './sign-in.css';
+import axios from 'axios';
 
 const SignInPage = () => {
-  const handleSubmit = (e) => {
+
+  const navigate = useNavigate();
+
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Perform any necessary tasks, such as form validation or authentication
+
+    try {
+      
+      const url = 'https://agriswift-backend.onrender.com/auth/login';
+     
+      const userData = {
+        email: formData.email,
+        password: formData.password
+      };
+
+      const response = await axios.post(url, userData);
+      console.log('Login successful:', response.data);
+      sessionStorage.setItem('token', response.data.token);
+      // sessionStorage.setItem('firstName', response.data.result.fullame);
+      // sessionStorage.setItem('id', response.data.result.userId);
+      //setUser({id: response.data.result.userid, firstName: response.data.result.firstName})
+      navigate("/dashboard");
+
+    } catch (error) {
+      console.error('Error occurred:', error.response.data);
+      alert('Sign in failed. Please try again.');
+    }
+    
   };
 
   return (
@@ -13,13 +52,11 @@ const SignInPage = () => {
       <div>
         <p className='sign-in-text'>Sign In</p>
         <form onSubmit={handleSubmit}>
-          <label className='label-email'>Fullname</label>
-          <input type="text" placeholder="Enter your fullname" />
+          <label className='label-email'>Email</label>
+          <input type="email"  name="email" value={formData.email} onChange={handleChange} placeholder="Enter your email" />
           <label className='label-password'>Password</label>
-          <input type="password" placeholder="Enter your password" />
-          <Link to="/dashboard">
-            <button type="submit" className="sign-in-button">Sign in</button>
-          </Link>
+          <input type="password" name="password" value={formData.password} onChange={handleChange} placeholder="Enter your password" />
+          <button type="submit" className="sign-in-button">Sign in</button>
         </form>
         <p className='alternative-sign-in'>Or</p>
         <button className="sign-in-with-google-button">Sign in with Google</button>
